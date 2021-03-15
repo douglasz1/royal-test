@@ -1,2 +1,3 @@
 <?php
-include("lib/vendor/autoload.php");
+include("config/config.php");
+include("DIRREQ.lib/vendor/autoload.php");
