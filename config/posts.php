@@ -1,7 +1,7 @@
 <?php
 
 if($_GET['operacao']=="create"){
-	$url  = 'http://localhost:8080/api_/product/create.php';
+	$url  = 'http://localhost:8080/api_royal/product/create.php';
 	$data = ['name' => 'Amazing Pillow 2.0',
 			'price' => '199',
 			'description' => 'The best pillow for amazing programmers',
@@ -16,7 +16,7 @@ if($_GET['operacao']=="create"){
 }
 
 if($_GET['operacao']=="update"){
-	$url  = 'http://localhost:8080/api_/product/update.php';
+	$url  = 'http://localhost:8080/api_royal/product/update.php';
 	$data = ['id' => '48',
 			'name' => 'Amazing Pillow 3.0',
 			'price' => '1999999999',
@@ -31,7 +31,7 @@ if($_GET['operacao']=="update"){
 }
 
 if($_GET['operacao']=="delete"){
-	$url  = 'http://localhost:8080/api_/product/delete.php';
+	$url  = 'http://localhost:8080/api_royal/product/delete.php';
 	$data = ['id' => '60'];
 	$ch   = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
